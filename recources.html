@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Sab+ icon.ico">
+    <script src="https://kit.fontawesome.com/bc60a06ccd.js" crossorigin="anonymous"></script>
+    <title>Sab+</title>
+    <style>
+        a {
+            color: #0f0;
+            text-decoration: none;
+        }
+        body {
+            margin: 0px;
+            
+
+            color: #0f0;
+            background-color: #000;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-bottom: solid 2px #00ff00;
+            height: 80px;
+            text-align: center;
+        }
+        
+        .nav-panel{
+            display:flex;
+            justify-self: start;
+            padding:0px;
+            gap: 50px;
+        }
+
+        .logo {
+            color: #00ff00;
+            font-size: 44px;
+            font-weight: 700;
+            padding-left: 0px;
+        }
+        .nav-buttons {
+            margin: 20px 0px;
+            color: #00ff00;
+            position: relative;
+            font-size: 20px;
+            width: auto;
+        }
+        .nav-buttons::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #00ff00;
+            transition: width 0.25s ease;
+            transform: translateX(-50%);
+        }
+        .nav-buttons:hover::after {
+            width: 100%;
+        }
+        .social-link-panel{
+            display: flex;
+            margin-left: 45px;
+            justify-self: start;
+            padding: 0px;
+            gap: 50px;
+        }
+        .social-link-button:hover {
+            background-color: rgb(50, 50, 50);
+            outline: 10px solid rgb(50, 50, 50);
+        }
+        .OS {
+            padding-left: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+        .OSp {
+            margin-top: 0px;
+        }
+        .Software {
+            padding-left: 50px;
+        }
+        .Softp {
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-panel">
+                <p class="nav-buttons"><a href="news.html">News</a></p>
+                <p class="nav-buttons"><a href="recources.html">Resources</a></p>
+            </div>
+            
+            <h2 class="logo"><a href="home.html">SAB+</a></h2>
+            
+
+            <div class="social-link-panel">
+                <p class="social-link-button"><a href="#"><i class="fa-solid fa-language" style="color: rgb(0, 255, 0);"></i></a></p>
+                <p class="social-link-button"><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 255, 0);"></i></a></p>
+                <p class="social-link-button"><a href="https://discord.gg/vyTuZARCxB"><i class="fa-brands fa-discord"></i></a></p>
+            </div>
+
+        </div>
+    </header>
+    <div class="OS">
+        <h1>Sab+ OS</h1>
+        <p class="OSp">Coming soon...</p>
+    </div>
+    <div class="Software">
+        <h1>Sab+ Software</h1>
+        <p class="Softp">Coming soon...</p>
+    </div>
+</body>
+<footer>
+</footer>
+</html>
