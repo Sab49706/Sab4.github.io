@@ -1,0 +1,99 @@
+
+        a {
+            color: #0f0;
+            text-decoration: none;
+        }
+        body {
+            margin: 0px;
+            
+
+            color: #0f0;
+            background-color: #000;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-bottom: solid 2px #00ff00;
+            height: 80px;
+            text-align: center;
+        }
+        
+        .nav-panel{
+            display:flex;
+            justify-self: start;
+            padding:0px;
+            gap: 50px;
+        }
+
+        .logo {
+            color: #00ff00;
+            font-size: 44px;
+            font-weight: 700;
+            padding-left: 0px;
+        }
+        .nav-buttons {
+            margin: 20px 0px;
+            color: #00ff00;
+            position: relative;
+            font-size: 20px;
+            width: auto;
+        }
+        .nav-buttons::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #00ff00;
+            transition: width 0.25s ease;
+            transform: translateX(-50%);
+        }
+        .nav-buttons:hover::after {
+            width: 100%;
+        }
+        .social-link-panel{
+            display: flex;
+            margin-left: 45px;
+            justify-self: start;
+            padding: 0px;
+            gap: 50px;
+        }
+        .social-link-button:hover {
+            background-color: rgb(50, 50, 50);
+            outline: 10px solid rgb(50, 50, 50);
+        }
+                .OS {
+            padding-left: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+        .OSp {
+            margin-top: 0px;
+        }
+        .Software {
+            padding-left: 50px;
+        }
+        .Softp {
+            margin-top: 0px;
+        }
+
+        .main-header {
+            text-align: center;
+        }
+        @media (max-width: 800px) {
+            .nav-panel{
+                gap: 26px;
+            }
+        }
